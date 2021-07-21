@@ -1,19 +1,19 @@
-import { React, useEffect } from 'react';
+/* eslint-disable no-mixed-spaces-and-tabs */
+import { React } from 'react';
 import './App.scss';
-import context from './core/context';
-import SampleService from './services/sample';
-import SimpleButton from './components/simpleButton';
 
 const App = () => {
-	useEffect(SampleService.sayHai, []);
+	// eslint-disable-next-line no-unused-vars
+	const a = 0;
 
-	return (
-		<div className="App">
-			<div>Count: { context.state.count }</div>
-			<div>{ SimpleButton() }</div>
-			<div>Refresh ID: { context.state.refreshID }</div>
-		</div>
-	);
+	return <div style={ {
+		height: '100px',
+ 		width: '100px',
+		border: '2px solid black',
+
+	} }
+	       >
+		Hello</div>;
 };
 
 export default App;
