@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { React } from 'react';
 import './App.scss';
@@ -13,7 +14,22 @@ const App = () => {
 
 	} }
 	       >
-		Hello</div>;
+		<div style={ {
+			height: '200px',
+			width: '200px',
+			border: '2px solid black',
+
+		} }
+		>
+			<div style={ {
+				height: '300px',
+				width: '300px',
+				border: '2px solid black',
+
+			} }
+			/>
+		</div>
+	</div>;
 };
 
 export default App;
