@@ -22,8 +22,8 @@ const App = () => {
 		} }
 		>
 			<div style={ {
-				height: '350px',
-				width: '350px',
+				height: '300px',
+				width: '300px',
 				border: '2px solid black',
 
 			} }
