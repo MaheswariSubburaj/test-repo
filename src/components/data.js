@@ -1,5 +1,6 @@
-var data = {
-	people : [
+/* eslint-disable no-mixed-spaces-and-tabs */
+const data = {
+	people: [
 		 {
 				 name: 'Ram',
 				 age: 22,
@@ -14,7 +15,8 @@ var data = {
 				 name: 'Azar',
 				 age: 23,
 				 color: 'Green',
-		 }
- ]
+		 },
+	],
 };
-export default (data);
+
+export default data;

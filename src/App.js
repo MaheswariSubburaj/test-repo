@@ -2,33 +2,19 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { React } from 'react';
 import './App.scss';
+import data from './components/data';
+import People from './components/people';
 
 const App = () => {
 	// eslint-disable-next-line no-unused-vars
 	const a = 0;
+	const { people } = data;
 
-	return <div style={ {
-		height: '100px',
- 		width: '100px',
-		border: '2px solid black',
+	// eslint-disable-next-line no-console
+	console.log(data);
 
-	} }
-	       >
-		<div style={ {
-			height: '200px',
-			width: '200px',
-			border: '2px solid black',
-
-		} }
-		>
-			<div style={ {
-				height: '300px',
-				width: '300px',
-				border: '2px solid black',
-
-			} }
-			/>
-		</div>
+	return <div className="App">
+		{People(people)}
 	</div>;
 };
 
