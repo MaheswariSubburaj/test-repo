@@ -1,13 +1,16 @@
 import { React } from 'react';
-import People from './people';
-import Person from './person';
 
-const People = (People) => {
-	const count = people.length;
+const Person = (person) => {
+	const { name } = person;
+	const { age } = person;
+	const { color } = person;
+
 	return <div>
-	<div>{people.map(Person)}</div>
-	<div> People count : {count} </div>
+		<div style={ {
+			background: color,
+		} }
+		>Hello! {name}, your age {age}</div>
 	</div>;
 };
 
-export default People;
+export default Person;

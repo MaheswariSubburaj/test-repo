@@ -1,15 +1,14 @@
+/* eslint-disable react/destructuring-assignment */
 import { React } from 'react';
+import Person from './person';
 
 const People = (people) => {
-	const { name } = people;
-	const { age } = people;
-	const { color } = people;
+	// eslint-disable-next-line react/destructuring-assignment
+	const count = people.length;
 
 	return <div>
-		<div style={ {
-			background: color,
-		} }
-		>Hello! {name}, your age {age}</div>
+		<div>{ people.map(Person) }</div>
+		<div> People count : {count} </div>
 	</div>;
 };
 
