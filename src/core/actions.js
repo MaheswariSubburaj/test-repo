@@ -1,12 +1,12 @@
 const setCount = ({ data }) => ({
-	count: data * data,
+	count: data,
 });
-const increaseCount = ({ data }) => ({
-	num: data,
+const setInput = ({ data }) => ({
+	setInput: data,
 });
 const actions = {
 	setCount,
-	increaseCount,
+	setInput,
 };
 
 export default actions;

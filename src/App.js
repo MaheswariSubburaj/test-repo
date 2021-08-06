@@ -1,11 +1,13 @@
 import { React } from 'react';
 import './App.css';
 import TextBox from './components/input';
+import context from './core/context.js';
 
-const App = () =>
-// eslint-disable-next-line no-console
-// console.log(context.state);
+const App = () => {
+	// eslint-disable-next-line no-console
+	console.log(context.state);
 
-	<div className="App">{ TextBox() } </div>;
+	return	<div className="input">{ TextBox() } </div>;
+};
 
 export default App;
