@@ -1,11 +1,19 @@
-const setCount = ({ data }) => ({
-	count: data,
-});
-const setInput = ({ data }) => ({
-	setInput: data,
-});
+import InputManager from '../services/InputManager';
+import { rndString } from '@laufire/utils/random';
+import config from './config';
+
+const setInput = ({ state, data }) => {
+	const update = InputManager.checkInput(state.question, data);
+
+	return {
+		answer: update === 1 ? '' : data,
+		score: state.score + update,
+		question: update === 1
+			? rndString(config.refreshIDLength)
+			: state.question,
+	};
+};
 const actions = {
-	setCount,
 	setInput,
 };
 
